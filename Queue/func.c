@@ -3,14 +3,14 @@
 #include"head.h"
 que_size=SIZE;
 
-int IsFull(struct Queue *q)
+int IsFull(struct Queue *q) //Check if the queue is full
 {
 	if(que_size==0)		//if que_size=0 then que is full, if =SIZE then empty
 		return 1;
 	else
 		return 0;
 }
-int IsEmpty(struct Stack *s)
+int IsEmpty(struct Stack *s) //Check if the queue is empty
 {
 	if (que_size==SIZE)
 		return 1;
