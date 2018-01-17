@@ -201,6 +201,7 @@ struct Linked_list* reverse_list(struct Linked_list *head)
         }
 
         head = one_step_forward;
+		display_Linked_list(head);
     }
 
     return head;

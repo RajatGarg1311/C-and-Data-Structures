@@ -1,18 +1,17 @@
 #include<stdio.h>
 #include<malloc.h>
 #include"head.h"
-que_size=SIZE;
 
-int IsFull(struct Queue *q)
+int IsFull(struct Stack *s)
 {
-	if(que_size==0)		//if que_size=0 then que is full, if =SIZE then empty
+	if((s->top)+1>SIZE-1)
 		return 1;
 	else
 		return 0;
 }
 int IsEmpty(struct Stack *s)
 {
-	if (que_size==SIZE)
+	if (s->top <=-1)
 		return 1;
 	else
 		return 0;
